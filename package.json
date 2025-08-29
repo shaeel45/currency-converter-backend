@@ -5,9 +5,8 @@
   "main": "app.ts",
   "type": "module",
   "scripts": {
-    "dev": "node --loader ts-node/esm src/app.ts",
-    "build": "tsc",
-    "start": "node dist/app.js"
+    "dev": "vercel dev",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +16,10 @@
     "axios": "^1.11.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^4.21.2",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "@vercel/node": "^5.3.17",
     "ts-node": "^10.9.2",
