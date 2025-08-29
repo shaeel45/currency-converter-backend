@@ -7,9 +7,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "resolveJsonModule": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   },
-  "include": ["src", "types"]
+  "include": ["src", "types", "api"]
 }
