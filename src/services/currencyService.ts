@@ -9,7 +9,10 @@ if (!globalThis.fetch) {
   globalThis.fetch = fetch;
 }
 const API = process.env.CURRENCY_API_KEY;
-const freecurrencyapi = new Freecurrencyapi(API || "");
+if (!API) {
+  throw new Error("CURRENCY_API_KEY environment variable is not set");
+}
+const freecurrencyapi = new Freecurrencyapi(API);
 
 async function convertCurrency(from: string, to: string, amount: number) {
   try {
